@@ -1,0 +1,650 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+/*font import*/
+@font-face {
+  font-family: kings-cd-bold;
+  src: url(/font/kingsbridge-cd-bd.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: kings-cd-book;
+  src: url(/font/kingsbridge-cd-bk.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: kings-sb-italic;
+  src: url(/font/kingsbridge-sb-it.ttf);
+  font-display: swap;
+}
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(239, 165, 18);
+  background: linear-gradient(
+    rgba(239, 165, 18, 1) 30%,
+    rgba(236, 231, 58, 1) 100%
+  );
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+body {
+  background-color: #ece73a;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  width: 170px;
+  height: 2px;
+  background-color: #efa512;
+  border: none;
+}
+.faq-hr {
+  margin: auto;
+}
+/*navbar*/
+.logo-container img {
+  height: 75px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.navbar ul {
+  display: flex;
+}
+.nav-item a {
+  color: #2f2f2f;
+}
+.main-section {
+  height: 90vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.main-section h3 {
+  font-family: kings-cd-bold;
+  color: white;
+  font-size: 40px;
+  padding: 40px 0;
+}
+.main-section h4 {
+  font-family: kings-cd-bold;
+  color: #2f2f2f;
+  font-size: 30px;
+  padding: 15px 0;
+}
+.appelsin-container {
+  display: none;
+}
+/*landingpage*/
+.overskrift-container {
+  padding-bottom: 50px;
+}
+.overskrift-container h1 {
+  font-family: kings-cd-bold;
+  color: white;
+  font-size: 48px;
+}
+.overskrift-container p {
+  font-family: kings-sb-italic;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 0;
+  color: #2f2f2f;
+}
+.lykkehjul-teaser {
+  font-family: kings-cd-bold;
+  color: white;
+  font-size: 24px;
+  padding: 40px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+/*lykkehjul page*/
+.mail-tekst {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+.mail-tekst input {
+  background-color: #efa512;
+  padding: 5px 10px;
+  margin: 5px 0;
+  color: white;
+  font-family: kings-cd-bold;
+  text-align: center;
+  border-radius: 5px;
+  border-style: none;
+}
+.mail-tekst input::placeholder {
+  color: white;
+  font-family: kings-sb-italic;
+  text-align: center;
+}
+.praemier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.praemier section {
+  padding: 7px;
+}
+.icon-container {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+/*vores historie page*/
+.vores-historie-img {
+  width: 250px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+.vores-historie-section,
+.vores-ap-section,
+.bag-tuborg-section,
+.infografik-section,
+.shop-section,
+.faq-section,
+.kontakt-section {
+  justify-content: flex-start;
+}
+.vores-ap-img {
+  height: 270px;
+}
+.vores-ap-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vores-historie-img-desktop {
+  display: none;
+}
+.vores-historie-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.laes-mere-knap {
+  background-color: #efa512;
+  font-family: kings-cd-book;
+  color: #2f2f2f;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.bag-tuborg-section,
+.infografik-section,
+.faq-section,
+.kontakt-section {
+  height: 100%;
+}
+/*bag tuborg page*/
+.bag-tuborg-article {
+  width: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bag-tuborg-img {
+  width: 225px;
+  padding: 15px 0;
+}
+.infografik-section h4 {
+  font-size: 25px;
+}
+.infografik-desktop {
+  display: none;
+}
+/*merch page*/
+.merch-img {
+  margin: 40px 0;
+}
+.merch-img-shirt {
+  height: 200px;
+}
+.merch-img-hat {
+  height: 135px;
+  margin-bottom: 70px;
+}
+.merch-container-desktop {
+  display: none;
+}
+/*faq - kontakt page*/
+.faq-section {
+  align-items: flex-start;
+}
+.faq-section h4 {
+  margin: auto;
+}
+.question,
+.answer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2f2f2f;
+  padding: 5px 0;
+}
+.question {
+  font-weight: bold;
+}
+.answer {
+  margin-left: 10px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+.kontakt-section article {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.email-container,
+.adresse-container {
+  display: flex;
+  justify-content: space-between;
+}
+.oplysning {
+  width: 63%;
+}
+.kontakt-section article div {
+  padding: 20px 0;
+}
+.soda-link {
+  color: #2f2f2f;
+  font-style: italic;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(236, 231, 58);
+  background: linear-gradient(
+    rgba(236, 231, 58, 1) 5%,
+    rgba(239, 165, 18, 1) 20%
+  );
+  color: #2f2f2f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  height: 400px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.footer-logo {
+  width: 50px;
+  padding: 40px 0;
+}
+.footer-info-kasse {
+  padding: 10px 20px;
+}
+.footer-kontakt {
+  height: 150px;
+  width: 100%;
+}
+
+/*scrollbar/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*BURGERMENU*/
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+@media only screen and (max-width: 650px) {
+  .hamburger {
+    display: block;
+    margin-right: 30px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    flex-direction: column;
+    background-color: #ece73a;
+    opacity: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-item {
+    margin: 5px 0;
+    color: #2f2f2f;
+    font-size: 18px;
+    font-family: kings-cd-bold;
+  }
+  .some-ikon {
+    font-size: 25px;
+  }
+
+  .nav-menu.active {
+    right: 0;
+    top: 81.19px;
+    height: 220px;
+  }
+  .nav-menu.active li {
+    padding: 4px 0;
+  }
+}
+/*Bouncing arrow*/
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.arrow a {
+  color: black;
+  font-size: 24px;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+#lykkehjul-link {
+  height: 10vh;
+}
+
+@media only screen and (min-width: 650px) {
+  .nav-item {
+    padding: 0 20px;
+  }
+  .nav-item a {
+    color: white;
+    font-size: 18px;
+    font-family: kings-cd-bold;
+  }
+  .nav-item a:hover {
+    color: #2f2f2f;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .appelsin-container {
+    display: block;
+    position: relative;
+  }
+  .appelsin-1-container {
+    right: -350px;
+    top: 150px;
+  }
+  .appelsin-2-container {
+    right: 350px;
+    bottom: 150px;
+  }
+  .appelsin-2-container img {
+    margin-bottom: 20px;
+  }
+  .hist-appelsin-h-1 {
+    position: absolute;
+    top: 170px;
+    right: 30px;
+  }
+  .hist-appelsin-v-1 {
+    position: absolute;
+    top: 600px;
+    left: 30px;
+  }
+  .bag-tuborg-section {
+    width: 70%;
+  }
+  .bag-tuborg-article-1 {
+    flex-direction: row;
+  }
+  .bag-tuborg-article-2 {
+    flex-direction: row-reverse;
+  }
+  .bag-tuborg-article {
+    padding: 20px 0;
+    align-items: flex-start;
+    line-height: 25px;
+  }
+  .bag-tuborg-article p {
+    margin: 0 10px;
+  }
+  .bag-tuborg-article img {
+    padding: 0;
+  }
+  .infografik-section {
+    margin-top: 100px;
+  }
+  .infografik-desktop {
+    display: block;
+    width: 800px;
+  }
+  .infografik-mobil {
+    display: none;
+  }
+  .shop-section {
+    height: 100vh;
+  }
+  .merch-img-dekstop {
+    width: 225px;
+    padding: 55px 35px;
+  }
+  .merch-img {
+    display: none;
+  }
+  .merch-container-desktop {
+    display: flex;
+  }
+  header {
+    height: 15vh;
+  }
+  .nav-item {
+    padding-bottom: 20px;
+  }
+  .nav-item a {
+    font-size: 20px;
+  }
+  .logo-container img {
+    height: 90px;
+    padding-left: 30px;
+  }
+  .faq-article {
+    width: 513px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #lykkehjul-link {
+    height: 13vh;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .landingpage-img {
+    width: 500px;
+  }
+  .overskrift-container h1 {
+    font-size: 65px;
+  }
+  .overskrift-container p {
+    font-size: 18px;
+  }
+  .lykkehjul-teaser {
+    font-size: 32px;
+    padding-bottom: 40px;
+  }
+  .appelsin-1-container {
+    right: -500px;
+    top: 150px;
+  }
+  .appelsin-2-container {
+    right: 500px;
+    bottom: 150px;
+  }
+  .mail-tekst p {
+    font-size: 17px;
+    padding: 15px 0;
+  }
+  .mail-tekst input {
+    padding: 15px 35px;
+    width: 250px;
+    font-size: 18px;
+  }
+  .mail-tekst input::placeholder {
+    font-size: 16px;
+  }
+  .praemier {
+    font-size: 17px;
+  }
+  .lykkehjul img {
+    width: 300px;
+  }
+  .main-section h3 {
+    font-size: 60px;
+  }
+  .vores-historie-img {
+    width: 325px;
+    padding: 0px 15px 15px 15px;
+    margin: auto;
+  }
+  .vores-historie-img-desktop {
+    display: block;
+    width: 325px;
+    margin: auto;
+    padding: 15px;
+  }
+  .vores-historie-img-container {
+    flex-direction: row;
+  }
+  .laes-mere-knap {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+  .vores-ap-img-container {
+    flex-direction: row;
+  }
+  .vores-ap-img {
+    height: 400px;
+    margin: 60px 0;
+  }
+  .main-section h4 {
+    font-size: 40px;
+  }
+  .hist-appelsin-h-1 {
+    top: 170px;
+    right: 30px;
+  }
+  .bag-tuborg-img {
+    width: 300px;
+    height: 245px;
+  }
+  .infografik-desktop {
+    width: 1200px;
+  }
+  hr {
+    width: 200px;
+  }
+  .merch-img-dekstop {
+    width: 275px;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+/*Optimering af billeder størrelser til page load time - mobil size*/
+@media only screen and (max-width: 450px) {
+  .logo-container img {
+    width: 68.14px;
+  }
+  .vores-historie-img {
+    height: 275.94px;
+  }
+  .vores-ap-img {
+    width: 239.28px;
+  }
+  .lykkehjul img {
+    width: 269px;
+    height: 269px;
+  }
+  .landingpage-img {
+    width: 375px;
+    height: 322px;
+  }
+  .footer-logo {
+    height: 145.84px;
+  }
+  .merch-img-shirt {
+    width: 213.45px;
+  }
+  .merch-img-hat {
+    width: 249.5px;
+  }
+}
+
+@media only screen and (min-height: 850px) {
+  .footer-kontakt {
+    position: absolute;
+    bottom: 0;
+  }
+}
